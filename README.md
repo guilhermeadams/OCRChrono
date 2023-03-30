@@ -36,7 +36,6 @@ The script will search for image files in the same directory as the script and i
 Here are ten regex patterns for date extraction:
 
 ```python
-import re
 
 # Matches dates in the format "MM/DD/YYYY" or "M/D/YYYY"
 pattern1 = re.compile(r"\d{1,2}\/\d{1,2}\/\d{4}")
@@ -67,6 +66,19 @@ pattern9 = re.compile(r"\d{4}\-\d{1,2}\-\d{1,2}")
 
 # Matches dates in the format "Day Month Year", e.g. "1 January 2022"
 pattern10 = re.compile(r"\d{1,2}\s[A-Za-z]+\s\d{2,4}")
+
+import re
+
+# Example regex pattern
+pattern = re.compile(r"\d{1,2}\/\d{1,2}\/\d{4}")
+
+# Example usage
+text = "Today's date is 03/31/2023"
+match = pattern.search(text)
+if match:
+    print("Found date:", match.group(0))
+
+# Close the code block
 
 
 ## Disclaimer :warning:
