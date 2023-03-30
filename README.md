@@ -77,8 +77,7 @@ text = "Today's date is 03/31/2023"
 match = pattern.search(text)
 if match:
     print("Found date:", match.group(0))
-
-# Close the code block
+```
 
 
 ## Disclaimer :warning:
